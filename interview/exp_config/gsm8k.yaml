@@ -1,0 +1,40 @@
+### model
+model_name_or_path: Qwen/Qwen2.5-Coder-7B
+
+### method
+stage: sft
+do_train: true
+finetuning_type: lora
+lora_target: all
+
+### dataset
+dataset: exp/gsm8k
+template: qwen
+overwrite_cache: true
+preprocessing_num_workers: 16
+
+### output
+output_dir: out/gsm8k
+logging_steps: 20
+save_steps: 250
+plot_loss: true
+overwrite_output_dir: true
+
+### train
+per_device_train_batch_size: 4
+gradient_accumulation_steps: 4
+learning_rate: 5e-6
+num_train_epochs: 2
+lr_scheduler_type: cosine
+warmup_steps: 100
+weight_decay: 0.1
+bf16: true
+ddp_timeout: 180000000
+
+### eval
+val_size: 0.1
+per_device_eval_batch_size: 1
+eval_strategy: steps
+eval_steps: 500
+
+run_name: gsm8k-sft
