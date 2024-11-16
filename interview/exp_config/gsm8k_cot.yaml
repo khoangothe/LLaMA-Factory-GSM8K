@@ -15,7 +15,7 @@ preprocessing_num_workers: 16
 
 ### output
 output_dir: out/gsm8k_cot
-logging_steps: 20
+logging_steps: 10
 save_steps: 250
 plot_loss: true
 overwrite_output_dir: true
@@ -35,7 +35,7 @@ ddp_timeout: 180000000
 val_size: 0.1
 per_device_eval_batch_size: 1
 eval_strategy: steps
-eval_steps: 500
+eval_steps: 40
 
 report_to: wandb
 run_name: gsm8k-cot-sft
