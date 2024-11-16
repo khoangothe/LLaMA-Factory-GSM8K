@@ -1,0 +1,12 @@
+
+### model
+model_name_or_path: Qwen/Qwen2.5-Coder-7B
+adapter_name_or_path: out/gsm8k_cot_combine
+template: qwen
+finetuning_type: lora
+
+### export
+export_dir: models/gsm8k-cot-combine-qwen
+export_size: 2
+export_device: gpu
+export_legacy_format: false

@@ -4,5 +4,9 @@
   },
   "gsm8k_cot": {
     "file_name": "gsm8k_cot.json"
+  },
+  "gsm8k_cot_combine": {
+    "file_name": "gsm8k_cot_combine.json"
   }
+
 }
