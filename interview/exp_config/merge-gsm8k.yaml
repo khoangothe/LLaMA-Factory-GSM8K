@@ -1,7 +1,7 @@
 
 ### model
 model_name_or_path: Qwen/Qwen2.5-Coder-7B
-adapter_name_or_path: out/gsm8
+adapter_name_or_path: out/gsm8k
 template: qwen
 finetuning_type: lora
 
