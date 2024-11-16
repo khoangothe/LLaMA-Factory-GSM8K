@@ -37,4 +37,5 @@ per_device_eval_batch_size: 1
 eval_strategy: steps
 eval_steps: 500
 
+report_to: wandb
 run_name: gsm8k-sft
