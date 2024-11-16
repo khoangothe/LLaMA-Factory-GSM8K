@@ -87,6 +87,7 @@ def convert_gsm8k_to_alpaca(input_parquet: str, output_json: str, num_shots: int
             current_example = all_examples[i]
             alpaca_example = {
                 "instruction": f"{few_shot_prompt}\n\nNow solve this problem step by step:\n{current_example['question']}",
+                "input": "",
                 "output": "\n".join(current_example['steps'] + [f"Therefore, the answer is {current_example['final_answer']}"]) + f"### {current_example['final_answer']}"
             }
             alpaca_data.append(alpaca_example)

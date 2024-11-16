@@ -20,6 +20,7 @@ def convert_gsm8k_to_alpaca(input_parquet, output_json):
             alpaca_example = {
                 "instruction": "Solve the following math word problem step by step:\n"
                 + row["question"],
+                "input": "",
                 "output": row["answer"],
             }
             alpaca_data.append(alpaca_example)

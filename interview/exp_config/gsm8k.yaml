@@ -8,7 +8,7 @@ finetuning_type: lora
 lora_target: all
 
 ### dataset
-dataset: exp/gsm8k
+dataset: gsm8k
 template: qwen
 overwrite_cache: true
 preprocessing_num_workers: 16
