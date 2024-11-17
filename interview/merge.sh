@@ -38,7 +38,7 @@ for script in "$DIR"/*.sh; do
     total_scripts=$((total_scripts + 1))
     echo "Executing: $script"
     
-    # Execute script and capture exit status
+    # Execute script using bash directly
     if bash "$script"; then
         echo "✓ Success: $script"
         successful_scripts=$((successful_scripts + 1))
