@@ -18,8 +18,7 @@ def convert_gsm8k_to_alpaca(input_parquet, output_json):
         alpaca_data = []
         for _, row in df.iterrows():
             alpaca_example = {
-                "instruction": "Solve the following math word problem step by step:\n"
-                + row["question"],
+                "instruction": row["question"],
                 "input": "",
                 "output": row["answer"],
             }

@@ -7,6 +7,9 @@
   },
   "gsm8k_cot_combine": {
     "file_name": "gsm8k_cot_combine.json"
+  },
+  "gsmic": {
+    "file_name": "gsmic_train.json"
   }
 
 }
