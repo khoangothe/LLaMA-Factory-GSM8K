@@ -27,8 +27,8 @@ def sample_json_list(json_file_path, sample_size=7000, seed=None):
     else:
         data = df
         
-    sampled_data = data.sample(n=sample_size, random_state=seed)
-    result = sampled_data.to_dict('records')
+    #sampled_data = data.sample(n=sample_size, random_state=seed)
+    result = data.to_dict('records')
     
     return result
 

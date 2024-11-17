@@ -10,6 +10,10 @@
   },
   "gsmic": {
     "file_name": "gsmic_train.json"
+  },
+  "openmath": {
+    "file_name": "openmath.json"
   }
+
 
 }
