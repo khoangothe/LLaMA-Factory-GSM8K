@@ -29,12 +29,6 @@ for script in "$DIR"/*.sh; do
         continue
     fi
     
-    # Skip if not executable
-    if [ ! -x "$script" ]; then
-        echo "Warning: $script is not executable, skipping..."
-        continue
-    fi
-    
     total_scripts=$((total_scripts + 1))
     echo "Executing: $script"
     
