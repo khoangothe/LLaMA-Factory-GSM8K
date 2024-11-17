@@ -1,9 +1,9 @@
 #!/bin/bash
 #
 lm_eval --model vllm --model_args pretrained=models/gsm8k-cot-qwen \
-  --tasks gsm8k,gsm8k_cot \
+  --tasks gsm8k,gsm8k_cot,gsm8k-cot-self-consistency,gsm8k-cot-zeroshot \
     --device cuda:0 \
-    --wandb_args project=gsm8k_dashboard,name=gsm8k_cot_sft\
+    --wandb_args project=gsm8k_dashboard_2,name=gsm8k_cot_sft\
     --log_samples \
     --output_path output/gsm8k-cot-qwen \
     --batch_size auto
