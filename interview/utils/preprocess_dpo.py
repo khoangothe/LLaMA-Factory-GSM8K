@@ -21,6 +21,10 @@ def convert_gsm8k_to_alpaca(input_parquet, output_json):
                 "conversations": [
                     {
                         "from": "system",
+                        "value": "Solve the following problem:"
+                    },
+                    {
+                        "from": "human",
                         "value": row["prompt"]
                     }
                 ],
