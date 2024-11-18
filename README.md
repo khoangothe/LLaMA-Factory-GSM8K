@@ -3,9 +3,9 @@
 * [x] Models merging with Slerp-Merge and Ties-Merge using [Mergekit](https://github.com/arcee-ai/mergekit)
 * [x] SFT using GSM8k, GSMIC, OpenmathInstruct2 (200K sample), GSM8k COT
 * [x] DPO using GSM8K preference [dataset](https://huggingface.co/datasets/nbalepur/gsm8k_preferences) and self generated HarnessEval format dpo set.
-* [o] [DUP](https://arxiv.org/abs/2404.14963) based langgraph agents (not yet evaluated) 
+* [ ] [DUP](https://arxiv.org/abs/2404.14963) based langgraph agents (not yet evaluated) 
 * [ ] TIR evaluation as Qwen2.5-Coder is a code generated model
-
+All experiment was done with a A40 rented on Runpod
 ### Checkpoint path
 
 - [All Loras](https://huggingface.co/khoantap/Qwen2.5-Coder-7B-GSM8k-LORA/tree/main)
