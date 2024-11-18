@@ -19,8 +19,8 @@ All experiment was done with a A40 rented on Runpod
 
 ### Script
 ```
-bash interview/eval.sh
-bash interview/merge.sh
+bash interview/eval.sh #Eval on Harness
+bash interview/merge.sh #Merge Lora after training
 ```
 
 ### Langgraph DUP Agent
