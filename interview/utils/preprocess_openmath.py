@@ -52,7 +52,7 @@ def preprocess_openmath(df, output_path):
         sample = {
             "instruction": row["problem"],
             "input": "",
-            "answer": row["generated_solution"] + " #### " + row["expected_answer"]
+            "output": row["generated_solution"] + " #### " + row["expected_answer"]
         }
         processed_df.append(sample)
 
