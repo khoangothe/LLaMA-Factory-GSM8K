@@ -18,7 +18,7 @@ def convert_gsm8k_to_alpaca(input_parquet, output_json):
         alpaca_data = []
         for _, row in df.iterrows():
             alpaca_example = {
-                "conversation": [
+                "conversations": [
                     {
                         "from": "system",
                         "value": row["prompt"]
