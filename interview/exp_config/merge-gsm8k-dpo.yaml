@@ -1,0 +1,11 @@
+### model
+model_name_or_path: models/
+adapter_name_or_path: out/gsm8k_dpo
+template: qwen
+finetuning_type: lora
+
+### export
+export_dir: models/gsm8k-dpo
+export_size: 2
+export_device: gpu
+export_legacy_format: false
