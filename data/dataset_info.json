@@ -23,5 +23,16 @@
       "chosen": "chosen",
       "rejected": "rejected"
     }
+  },
+    "gsm8k_dpo_format": {
+    "file_name": "gsm8k_dpo_format.json",
+    "ranking": true,
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "chosen": "chosen",
+      "rejected": "rejected"
+    }
   }
+
 }
