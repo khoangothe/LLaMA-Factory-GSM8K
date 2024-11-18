@@ -13,7 +13,8 @@
   },
   "openmath": {
     "file_name": "openmath.json"
+  },
+  "gsm8k_dpo": {
+    "file_name": "gsm8k_dpo.json"
   }
-
-
 }
