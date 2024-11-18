@@ -15,6 +15,13 @@
     "file_name": "openmath.json"
   },
   "gsm8k_dpo": {
-    "file_name": "gsm8k_dpo.json"
+    "file_name": "gsm8k_dpo.json",
+    "ranking": true,
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "chosen": "chosen",
+      "rejected": "rejected"
+    }
   }
 }
